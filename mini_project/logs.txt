@@ -1,0 +1,2 @@
+[ERROR] 2025-03-30 10:02:33 - Invalid password
+[INFO] 2025-03-30 10:01:05 - User login success
