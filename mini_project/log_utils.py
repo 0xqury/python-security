@@ -19,3 +19,15 @@ def extract_time(log):
 
 def extract_message(log):
     return re.search(r"- (.+)$", log).group(1)
+
+# 로그 입력 받아 파일에 저장
+def file_write(mod):
+    try:
+        with open("logs.txt", mod) as f:
+            while True:
+                content = input("로그를 입력하세요 (종료 : q): ")
+                if content == "q":
+                    break
+                f.write(content + "\n")
+    except Exception as e:
+        print("파일 작성에 오류가 발생했습니다.", e)
